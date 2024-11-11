@@ -71,10 +71,16 @@ $`δ_WB(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
 
 
 which we recognize as a quantile classifier with $`q=ℓ0/(ℓ0+ℓ1)`$ and its risk is
+
+
 $`r(δ_WB,ℓ_0,ℓ_1)=E[min{ℓ1p(X),ℓ0(1−p(X))}]`$.
 
-The Bayes rule is the median quantile rule corresponding to q=1/2 with equal misclassification costs $`ℓ_0=ℓ_1=1`$. Thus, its cost-weighted risk is (1)
-$`r(δB,1,1)=P{δB(X)≠Y}=E[min\left\{{p(X),1−p(X)\right\}]=E[p(X)]`$.
+The Bayes rule is the median quantile rule corresponding to q=1/2 with equal misclassification costs $`ℓ_0=ℓ_1=1`$. Thus, its cost-weighted risk is
+
+
+$`r(δB,1,1)=P\left\{δB(X)≠Y\right\}=E[min\left\{p(X),1−p(X)\right\}]=E[p(X)]`$.
+
+
 Notice this will be nearly zero when p(x) is near zero as happens in marginally imbalanced data.
 
 

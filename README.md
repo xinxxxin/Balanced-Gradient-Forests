@@ -8,9 +8,11 @@ Imbalanced data, or the class imbalanced problem, refers to classification setti
 Class imbalanced data seriously hinders the classification performance of learning algorithm such as RF because their decisions are based on the Bayes rule, a widely used method in machine learning. Essentially, it is used because it is the decision rule that minimizes misclassification error, which at first seems like a good property. However, this is problematic for imbalanced data since misclassification error is often minimized by classifying most (if not) all of the data as belonging to the majority class. For example, there are 99 species presence and 1 absences, predicting 100 occurrences as presences returns 100% True Positive Rate and 99% overall accuracy (99/100).
 
 More formally, let $`Y∈{0,1}`$ denote the two-class outcome and let $`p(x)=P(Y=1∣X=x)`$ be the classification probability for the minority group. The Bayes rule classifies cases to class label 1 if the classification probability is 1/2 or larger,
+
+
 $`δB(x)=I(p(x)≥1/2)`$.
 
-The problem is that $`p(x)$$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
+The problem is that $`p(x)`$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
 
 
 $`δB(x)=I(p(x)≥1/2)→0,if p(x)→0`$.

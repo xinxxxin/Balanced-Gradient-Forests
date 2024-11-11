@@ -21,15 +21,15 @@ $`δB(x)=I(p(x)≥1/2)→0,if p(x)→0`$.
 This seemingly works out for the Bayes decision rule, because [as will be shown in equation (1)] this yields a misclassification error rate of zero.
 
 # Formal definition of imbalanced
-Definition 1: The imbalance ratio (IR) is defined as IR=N0/N1 where $`N0`$ and $`N1`$ denote the cardinality of the majority and minority samples, respectively. A data set is imbalanced if $`IR > 1`$.
+### Definition 1: The imbalance ratio (IR) is defined as $`IR=N0/N1`$ where $`N0`$ and $`N1`$ denote the cardinality of the majority and minority samples, respectively. A data set is imbalanced if $`IR > 1`$.
 
 For example, the $`IR`$ in our previous example was 6.73. This is actually only moderately high and in practice it is possible to encounter data with much higher values. In fact, we will examine a simulation setting where the value is allowed to be 100.
 
-Definition 2: A minority class example is safe, borderline, or rare if 0 to 1, 2 to 3, or 4 to 5 of its 5 nearest neighbors are of the majority class, respectively.
+### Definition 2: A minority class example is safe, borderline, or rare if 0 to 1, 2 to 3, or 4 to 5 of its 5 nearest neighbors are of the majority class, respectively.
 
 The percentage of minority class samples that are rare plays an important role in the performance of a classifier.
 
-Definition 3: The data is marginally imbalanced if $`p(x)≪1/2`$ for all $`x∈X$$ where $`p(x)=P(Y=1|X=x)`$.
+### Definition 3: The data is marginally imbalanced if $`p(x)≪1/2`$ for all $`x∈X$$ where $`p(x)=P(Y=1|X=x)`$.
 
 Thus, marginally imbalanced data is data for which the probability of the minority class is close to zero throughout the feature space.
 

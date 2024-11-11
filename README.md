@@ -87,13 +87,29 @@ Notice this will be nearly zero when p(x) is near zero as happens in marginally 
 We have the following result which states that under cost-weighted risk the optimal classifier is the weighted Bayes rule.
 
 
-Note: 
 
-math edition in LaTex can be found from: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Note: 
+
+**Math edition in LaTex can be found from:**
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 
-Insert mach formulas in LaTex:
+**Insert mach formulas in LaTex:**
 
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet

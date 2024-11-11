@@ -56,7 +56,7 @@ $`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$.
 Define the cost-weighted risk for a classifier $$δ:/mathcal(X)→{0,1}$$ as
 
 
-$`r(δ,ℓ0,ℓ1)=E[ℓ0I{δ(X)=1,Y=0}+ℓ1I{δ(X)=0,Y=1}]`$
+$`r(δ,ℓ_0,ℓ_1)=E[ℓ0I{δ(X)=1,Y=0}+ℓ1I{δ(X)=0,Y=1}]`$
 
 
 where 
@@ -67,18 +67,18 @@ $`ℓ_1>0`$ cost of misclassifying a majority casecost of misclassifying a minor
 **Theorem 1:** Under cost-weighted risk, the optimal classifier is the weighted Bayes rule
 
 
-$`δ_WB(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
+$`δ_W_B(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
 
 
 which we recognize as a quantile classifier with $`q=ℓ0/(ℓ0+ℓ1)`$ and its risk is
 
 
-$`r(δ_WB,ℓ_0,ℓ_1)=E[min{ℓ1p(X),ℓ0(1−p(X))}]`$.
+$`r(δ_W_B,ℓ_0,ℓ_1)=E[min{ℓ1p(X),ℓ0(1−p(X))}]`$.
 
 The Bayes rule is the median quantile rule corresponding to q=1/2 with equal misclassification costs $`ℓ_0=ℓ_1=1`$. Thus, its cost-weighted risk is
 
 
-$`r(δB,1,1)=P\left\{δB(X)≠Y\right\}=E[min\left\{p(X),1−p(X)\right\}]=E[p(X)]`$.
+$`r(δ_B,1,1)=P\left\{δB(X)≠Y\right\}=E[min\left\{p(X),1−p(X)\right\}]=E[p(X)]`$.
 
 
 Notice this will be nearly zero when p(x) is near zero as happens in marginally imbalanced data.

@@ -11,7 +11,11 @@ More formally, let $`Y∈{0,1}`$ denote the two-class outcome and let $`p(x)=P(Y
 $`δB(x)=I(p(x)≥1/2)`$.
 
 The problem is that $`p(x)$$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
+
+
 $`δB(x)=I(p(x)≥1/2)→0,if p(x)→0`$.
+
+
 This seemingly works out for the Bayes decision rule, because [as will be shown in equation (1)] this yields a misclassification error rate of zero.
 
 # Formal definition of imbalanced

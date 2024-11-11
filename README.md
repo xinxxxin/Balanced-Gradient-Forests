@@ -10,7 +10,7 @@ Class imbalanced data seriously hinders the classification performance of learni
 More formally, let $`Y∈{0,1}`$ denote the two-class outcome and let $`p(x)=P\left\{Y=1∣X=x\right\}`$ be the classification probability for the minority group. The Bayes rule classifies cases to class label 1 if the classification probability is 1/2 or larger,
 
 
-$`δ_{B}\boldsymbol{(X)}=I\left\{p(x)≥1/2\right\}`$.
+$`δ_B\boldsymbol{(X)}=I\left\{p(x)≥1/2\right\}`$.
 
 The problem is that $`p(x)`$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
 
@@ -37,11 +37,15 @@ Definition 4: The data is conditionally imbalanced if there exists a set $`A⊂X
 In contrast to marginally imbalanced data, conditional imbalancedness occurs when the probability of the minority class is close to 1 given the features lie in a certain set, and approximately zero otherwise. In both cases, it is assumed that the minority class is rare.
 
 
-Note: math edition in LaTex can be found from: 
+Note: 
+
+math edition in LaTex can be found from: 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 
 Insert mach formulas in LaTex:
+
+
 https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet
 
 

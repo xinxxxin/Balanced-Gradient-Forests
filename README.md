@@ -15,7 +15,7 @@ $`δ_{B}(x)=I\left\{p(x)≥1/2\right\}`$.
 The problem is that $`p(x)`$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
 
 
-$`δB(x)=I(p(x)≥1/2)→0,if p(x)→0`$.
+$`δ_{B}(x)=I\left\{p(x)≥1/2\right\}→0,if p(x)→0`$.
 
 
 This seemingly works out for the Bayes decision rule, because [as will be shown in equation (1)] this yields a misclassification error rate of zero.
@@ -37,8 +37,17 @@ Definition 4: The data is conditionally imbalanced if there exists a set $`A⊂X
 In contrast to marginally imbalanced data, conditional imbalancedness occurs when the probability of the minority class is close to 1 given the features lie in a certain set, and approximately zero otherwise. In both cases, it is assumed that the minority class is rare.
 
 
-Note: math edition can be found from: 
+Note: math edition in LaTex can be found from: 
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+
+Insert mach formulas in LaTex:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet
+
+
 https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions and
+
+
 https://gist.github.com/modenaxe/e7debe3dcb727f99248139f7d31fac57
 
 

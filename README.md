@@ -10,12 +10,12 @@ Class imbalanced data seriously hinders the classification performance of learni
 More formally, let $`Y∈{0,1}`$ denote the two-class outcome and let $`p(x)=P\left\{Y=1∣X=x\right\}`$ be the classification probability for the minority group. The Bayes rule classifies cases to class label 1 if the classification probability is 1/2 or larger,
 
 
-$`δ_B\boldsymbol{(X)}=I\left\{p(x)≥1/2\right\}`$.
+$`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$.
 
 The problem is that $`p(x)`$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
 
 
-$`δ_{B}(x)=I\left\{p(x)≥1/2\right\}→0,if p(x)→0`$.
+$`δ_B(x)=I\left\{p(x)≥1/2\right\}→0,if p(x)→0`$.
 
 
 This seemingly works out for the Bayes decision rule, because [as will be shown in equation (1)] this yields a misclassification error rate of zero.

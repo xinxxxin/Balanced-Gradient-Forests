@@ -67,13 +67,13 @@ $`ℓ_1>0`$ cost of misclassifying a majority casecost of misclassifying a minor
 **Theorem 1:** Under cost-weighted risk, the optimal classifier is the weighted Bayes rule
 
 
-$`δ_W_B(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
+$`δ_{WB}(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
 
 
 which we recognize as a quantile classifier with $`q=ℓ0/(ℓ0+ℓ1)`$ and its risk is
 
 
-$`r(δ_W_B,ℓ_0,ℓ_1)=E[min{ℓ1p(X),ℓ0(1−p(X))}]`$.
+$`r(δ_{WB},ℓ_0,ℓ_1)=E[min{ℓ1p(X),ℓ0(1−p(X))}]`$.
 
 The Bayes rule is the median quantile rule corresponding to q=1/2 with equal misclassification costs $`ℓ_0=ℓ_1=1`$. Thus, its cost-weighted risk is
 

@@ -12,13 +12,13 @@ Class imbalanced data seriously hinders the classification performance of learni
 More formally, let $`Y∈{0,1}`$ denote the two-class outcome and let $`p(x)=P\left\{Y=1∣X=x\right\}`$ be the classification probability for the minority group. The Bayes rule classifies cases to class label 1 if the classification probability is 1/2 or larger,
 
 
-$`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$. (Eq.1)
+**$`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$.** (Eq.1)
 
 
 The problem is that $`p(x)`$ is small in imbalanced problems. This forces the Bayes decision rule to classify all cases to class label 0 as the IR increases. Indeed, in the limit:
 
 
-$`δ_B(x)=I\left\{p(x)≥1/2\right\}→0,if p(x)→0`$.
+**$`δ_B(x)=I\left\{p(x)≥1/2\right\}→0,if p(x)→0`$.**
 
 
 This seemingly works out for the Bayes decision rule, because [as will be shown in equation (1)] this yields a misclassification error rate of zero.
@@ -44,19 +44,19 @@ In contrast to marginally imbalanced data, conditional imbalancedness occurs whe
 Following Eq.1, we define a quantile classifier (q-classifier) as
 
 
-$`δq(x)=I\left\{p(x)≥q\right\}, 0<q<1`$.
+**$`δq(x)=I\left\{p(x)≥q\right\}, 0<q<1`$.**
 
 
 Observe that the median classifier q = 1/2 yields the Bayes classifier
 
 
-$`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$.
+**$`δ_B\boldsymbol{(x)}=I\left\{p(x)≥1/2\right\}`$.**
 
 
 Define the cost-weighted risk for a classifier $$δ:/mathcal(X)→{0,1}$$ as
 
 
-$`r(δ,ℓ_0,ℓ_1)=E[ℓ0I{δ(X)=1,Y=0}+ℓ1I{δ(X)=0,Y=1}]`$
+**$`r(δ,ℓ_0,ℓ_1)=E[ℓ0I{δ(X)=1,Y=0}+ℓ1I{δ(X)=0,Y=1}]`$**
 
 
 where 
@@ -67,18 +67,18 @@ $`ℓ_1>0`$ cost of misclassifying a majority casecost of misclassifying a minor
 **Theorem 1:** Under cost-weighted risk, the optimal classifier is the weighted Bayes rule
 
 
-$`δ_{WB}(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$
+**$`δ_{WB}(x)=I\left\{p(x)≥ℓ0/(ℓ0+ℓ1)\right\}`$**
 
 
 which we recognize as a quantile classifier with $`q=ℓ0/(ℓ0+ℓ1)`$ and its risk is
 
 
-$`r(δ_{WB},ℓ_0,ℓ_1)=E[min{ℓ_1p(X),ℓ_0(1−p(X))}]`$.
+**$`r(δ_{WB},ℓ_0,ℓ_1)=E[min{ℓ_1p(X),ℓ_0(1−p(X))}]`$.**
 
 **The Bayes rule is the median quantile rule corresponding to q=1/2 with equal misclassification costs $`ℓ_0=ℓ_1=1`$.** Thus, its cost-weighted risk is
 
 
-$`r(δ_B,1,1)=P\left\{δ_B(X)≠Y\right\}=E[min\left\{p(X),1−p(X)\right\}]=E[p(X)]`$.
+**$`r(δ_B,1,1)=P\left\{δ_B(X)≠Y\right\}=E[min\left\{p(X),1−p(X)\right\}]=E[p(X)]`$.**
 
 
 Notice this will be nearly zero when p(x) is near zero as happens in marginally imbalanced data.
